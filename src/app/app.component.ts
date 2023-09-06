@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Angular CC 105';
+  name: string = '';
+  listOfNames: string[] = ['reilan', 'sel', 'goku', 'boo'];
+
+  addName() {
+    console.log('addName is working!');
+    this.listOfNames.push(this.name);
+
+    console.log(this.listOfNames);
+  }
+  deleteFirst() {
+    this.listOfNames.splice(0, 1);
+  }
 }
