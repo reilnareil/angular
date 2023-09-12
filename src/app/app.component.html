@@ -4,8 +4,8 @@
 <button (click)="deleteFirst()">Delete 1st element</button>
 <h3>list of names:</h3>
 <ul>
-  <li *ngFor="let na of listOfNames">
-    {{ na }}
+  <li *ngFor="let n of listOfNames">
+    {{ n }}
   </li>
 </ul>
 <p *ngIf="listOfNames.length > 5">You have more than 5 names</p>
